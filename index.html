@@ -879,6 +879,20 @@
       width: 170px;
     }
   }
+
+  @media (max-width: 768px) {
+    /* Hide all sections except the hero container and banner section */
+    #feature-section, 
+    #ioyxg, 
+    #testimonial-section,  
+    #iv3be5 { /* These are the IDs of the sections you want to hide */
+      display: none; /* Set the display property to 'none' to hide them */
+    }
+    /* Ensure the banner section remains visible */
+    #iz29ek { 
+      display: block; /* Force the banner section to be visible */
+    }
+  }
 </style><!DOCTYPE html>
 <html lang="en">
 <head>
