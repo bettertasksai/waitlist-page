@@ -1,196 +1,882 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BetterTasks - Join the Future of Remote Work</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            background-color: #fff;
-            padding: 20px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            /* Remove the margin from the header */
-            margin: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem; /* Reduced for mobile */
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-
-        p {
-            font-size: 1rem; /* Reduced for mobile */
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #3498db;
-            color: #fff;
-            padding: 12px 24px; /* Reduced padding for mobile */
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem; /* Reduced font size for mobile */
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-decoration: none;
-        }
-
-        .btn:hover {
-            background-color: #2980b9;
-        }
-
-        .hero-section {
-            background-image: url("https://images.unsplash.com/photo-1507679799820-f235cb382ac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"); /* Replace with your hero image */
-            background-size: cover;
-            background-position: center;
-            padding: 50px 0 0 0;
-            text-align: center;
-            color: white; /* White text for contrast */
-            margin: 0 16px 0 32px; 
-        }
-
-        .hero-section h1 {
-            font-size: 48px; /* Larger heading for hero section */
-        }
-
-        .hero-text {
-            color: #808080; /* Example color, choose your desired color */
-            text-align: center;
-            max-width: 720px;
-        }
-
-        .features {
-            display: flex;
-            flex-direction: column; /* Column layout for mobile */
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .feature {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: left;
-            width: 100%; /* Full width for mobile */
-        }
-
-        .feature h3 {
-            color: #2c3e50;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .feature p {
-            font-size: 0.9rem; /* Smaller font size for mobile */
-            line-height: 1.5;
-        }
-
-        /* Media Query for Smaller Screens */
-        @media (max-width: 768px) {
-            .container {
-                max-width: 95%; /* Make the container almost full width on smaller screens */
-            }
-
-            .features {
-                flex-direction: column; /* Stack features vertically on mobile */
-            }
-
-            .feature {
-                width: 100%; /* Make features full width */
-            }
-
-            .hero-section h1 {
-                font-size: 2rem; /* Adjust heading size for mobile */
-            }
-
-            .hero-text {
-                width: 90%; /* Make hero text take up most of the width */
-                font-size: 0.9rem; /* Adjust font size for readability */
-            }
-
-            .btn {
-                padding: 10px 20px; /* Reduce padding for mobile */
-                font-size: 0.9rem; /* Adjust font size */
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F258d0b961f621849e44d642b8b8ee071.cdn.bubble.io%2Ff1720810382469x139090751091792030%2FBetterTasks-Logo.png?w=256&h=34&auto=compress&dpr=1&fit=max" alt="BetterTasks Logo" width="180px">
-    </header>
-
-    <div class="hero-section">
-        <h1>Future of Remote Work</h1>
-        <p class="hero-text">Join our waitlist and be among the first to access exciting remote work opportunities. We're launching within the next 3 months, and you could be one of our first crowdworkers.</p>
-
-        
-      
-        <a href="https://forms.gle/3Hj61Anr9FHrKaNq9" class="btn">Join the Waitlist</a>
-    </div>
-
-    <div class="container">
-        <div class="features">
-            <div class="feature">
-                <h3>Flexible Hours</h3>
-                <p>Work when it suits you best, from anywhere in the world.</p>
-            </div>
-            <div class="feature">
-                <h3>Instant Payouts</h3>
-                <p>Withdraw your earnings anytime, hassle-free.</p>
-            </div>
-            <div class="feature">
-                <h3>Skill Development</h3>
-                <p>Access training to enhance your skills and earning potential.</p>
-            </div>
+<body id="iau9">
+  <div id="i6po" class="gjs-grid-row">
+    <div id="itjq" class="gjs-grid-column">
+      <div id="iyd2" class="gjs-grid-row">
+        <div id="iqjl" class="gjs-grid-column"><img id="i7ltc4" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F258d0b961f621849e44d642b8b8ee071.cdn.bubble.io%2Ff1720810382469x139090751091792030%2FBetterTasks-Logo.png?w=256&h=34&auto=compress&dpr=1&fit=max"/>
         </div>
+        <div id="iffs" class="gjs-grid-column">
+          <div id="it00l" class="gjs-grid-row">
+            <div id="irtfd" class="gjs-grid-column"><a id="icfyb" href="#feature-section" class="gjs-link">About</a><a
+                href="#feature-section" id="infmy1" class="gjs-link">Features</a></div>
+            <div id="icyzp" class="gjs-grid-column"><a id="i88iz" href="#testimonial-section"
+                class="gjs-link">Testimonials</a></div>
+          </div>
+        </div>
+        <div id="id7x" class="gjs-grid-column"><a id="i1mew" target="_blank" href="https://forms.gle/3Hj61Anr9FHrKaNq9"
+            class="gjs-button">Join Waitlist</a></div>
+      </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const btn = document.querySelector('.btn');
-            btn.addEventListener('mouseover', function() {
-                this.style.transform = 'scale(1.05)';
-            });
-            btn.addEventListener('mouseout', function() {
-                this.style.transform = 'scale(1)';
-            });
-        });
-    </script>
+  </div>
+  <div id="irz7b" class="gjs-grid-row">
+    <div id="iycz3" class="gjs-grid-column">
+      <h1 id="irjua" class="gjs-heading">Future of <span id="i4jn1p" class="gjs-text-blue">Remote Work</span></h1>
+      <div id="itndw" class="text-main-content">Join our waitlist and be among the first to access exciting remote work
+        opportunities. We're launching within the next 3 months, and you could be one of our first crowdworkers.<br/>
+      </div><a id="iar3s" href="https://forms.gle/3Hj61Anr9FHrKaNq9" target="_blank" class="gjs-button">Join
+        Waitlist</a><img id="i3vvs" src="https://images.pexels.com/photos/6392975/pexels-photo-6392975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+    </div>
+  </div>
+  <div id="feature-section" class="gjs-grid-row">
+    <div id="imymf" class="gjs-grid-column">
+      <div id="ib541" class="gjs-grid-row">
+        <div id="iz8m8" class="gjs-grid-column">
+          <h4 id="ij2gh" class="gjs-heading gjs-text-blue">Join Today</h4>
+          <h2 id="ism014" class="gjs-heading">No prerequisites, Work from Anywhere, Anytime, On Any Device</h2>
+          <div id="igrx8" class="text-main-content">BetterTasks is a platform where you can work from home, doing easy
+            data tasks and getting paid. It's a simple way to earn money online while contributing to important
+            projects.<br/></div>
+        </div>
+        <div id="iepks" class="gjs-grid-column"><img src="https://images.pexels.com/photos/3768135/pexels-photo-3768135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="i466d"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="ioyxg" class="gjs-grid-row">
+    <div id="i8w4i" class="gjs-grid-column">
+      <h4 id="ihs4lb" class="gjs-heading gjs-text-blue">Convenience at its best </h4>
+      <h2 id="iiacm" class="gjs-heading">Work on Your Terms, Earn
+        with<span id="icxfor" class="gjs-text-blue"> Confidence</span></h2>
+      <div id="ia21sa" class="text-main-content">BetterTasks offers a flexible and rewarding way to work remotely. As a
+        crowdworker on our platform, you’ll have the freedom to choose tasks that fit your schedule, work from anywhere,
+        and earn competitive pay. Our user-friendly interface makes it easy to get started, and our support team is
+        always here to help.</div>
+      <div id="ixzh1" class="gjs-grid-row">
+        <div id="ilpi3" class="gjs-grid-column feature-item">
+          <div data-type-icon id="ipmqo6" class="gjs-icon gjs-feature-icon"><svg xmlns="http://www.w3.org/2000/svg"
+              x="0px" y="0px" width="" viewBox="0 0 50 50">
+              <path
+                d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M25,28c-0.462,0-0.895-0.113-1.286-0.3 l-6.007,6.007C17.512,33.902,17.256,34,17,34s-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414l6.007-6.007 C22.113,25.895,22,25.462,22,25c0-1.304,0.837-2.403,2-2.816V8c0-0.553,0.447-1,1-1s1,0.447,1,1v14.184c1.163,0.413,2,1.512,2,2.816 C28,26.657,26.657,28,25,28z">
+              </path>
+            </svg></div>
+          <h3 id="in9ef" class="gjs-heading">Flexible Hours<br/></h3>
+          <div id="i8isa" class="text-main-content">Work when it suits you best, from anywhere in the world.<br/></div>
+        </div>
+        <div id="ic57kq" class="gjs-grid-column feature-item">
+          <div data-type-icon id="ibdusm" class="gjs-icon gjs-feature-icon"><svg xmlns="http://www.w3.org/2000/svg"
+              width="" fill="currentColor" viewBox="0 0 16 16" class="bi bi-coin">
+              <path
+                d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z">
+              </path>
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+              <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12"></path>
+            </svg></div>
+          <h3 id="ica43q" class="gjs-heading">Instant Payouts<br/></h3>
+          <div id="ickn3f" class="text-main-content">Withdraw your earnings anytime, hassle-free.<br/></div>
+        </div>
+        <div id="idv32l" class="gjs-grid-column feature-item">
+          <div data-type-icon id="ipmept" class="gjs-icon gjs-feature-icon"><svg xmlns="http://www.w3.org/2000/svg"
+              width="" fill="currentColor" viewBox="0 0 16 16" class="bi bi-play-circle">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+              <path
+                d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445">
+              </path>
+            </svg></div>
+          <h3 id="ieu6p6" class="gjs-heading">Skill Development<br/></h3>
+          <div id="izqkf7" class="text-main-content">Access training to enhance your skills and earning potential.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="testimonial-section" class="gjs-grid-row">
+    <div id="infwen" class="gjs-grid-column"><img id="iywruw" src="https://258d0b961f621849e44d642b8b8ee071.cdn.bubble.io/f1724678238361x161934852255690720/DataEntry.lk%20Logo.png"/>
+      <h2 id="ihap8q" class="gjs-heading">Testimonials of our former platform</h2>
+      <div id="i6fjjy" class="text-main-content">DataEntry.lk was a platform focused on providing data entry and
+        conversion services. It connected businesses with skilled workers who handled various data tasks efficiently and
+        accurately. The platform grew quickly, attracting local and international clients, and laid the groundwork for
+        what would eventually become BetterTasks.<br/></div>
+      <div id="i5k4nf" class="gjs-grid-row">
+        <div id="inea73" class="gjs-grid-column testimonial-item">
+          <div id="i2d7qp" class="gjs-grid-row">
+            <div id="idva29" class="gjs-grid-column"><img src="https://source.unsplash.com/random/200x200/?profile,person,business" id="ia7pcr"/>
+            </div>
+            <div id="i4djop" class="gjs-grid-column">
+              <h4 id="iqroa4" class="gjs-heading">Isuru Sandaruwan</h4>
+              <div id="iaqf2c" class="text-main-content">Crowdworker</div>
+            </div>
+          </div>
+          <div id="it3yug" class="text-main-content">Working with DataEntry.lk was a great experience. It was easy, and
+            comfortable. The platform was easy to use, and I appreciated the flexibility it offered.</div>
+        </div>
+        <div id="idndjn" class="gjs-grid-column testimonial-item">
+          <div id="ish0zj" class="gjs-grid-row">
+            <div id="inucqu" class="gjs-grid-column"><img src="https://source.unsplash.com/random/200x200/?profile,person,business" id="ixzdlj"/>
+            </div>
+            <div id="iuk8ib" class="gjs-grid-column">
+              <h4 id="i04ztt" class="gjs-heading">Yasas Bhanuka</h4>
+              <div id="ia9ts3" class="text-main-content">Crowdworker</div>
+            </div>
+          </div>
+          <div id="i8gt4n" class="text-main-content">I could work on tasks from home, and the payments were always
+            prompt. It was a reliable source of income and helped me develop new skills in data entry.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="iz29ek" class="gjs-grid-row">
+    <div id="ik2rdi" class="gjs-grid-column">
+      <h2 id="i83vu9" class="gjs-heading">The Future of Remote Work is
+        Here!<br/><span id="i7owfh" class="gjs-text-blue">Sign Up Now</span></h2>
+      <div id="in201n" class="text-main-content">Our platform is launching in just 3 months, and you have the chance to
+        be among our inaugural crowdworkers.<br/></div><a id="iwgwt5" href="https://forms.gle/3Hj61Anr9FHrKaNq9"
+        target="_blank" class="gjs-button">Join Waitlist</a>
+    </div>
+  </div>
+  <div id="iv3be5" class="gjs-grid-row">
+    <div id="ilriti" class="gjs-grid-column">
+      <div id="im0rle" class="gjs-grid-row">
+        <div id="iotp6j" class="gjs-grid-column"><img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F258d0b961f621849e44d642b8b8ee071.cdn.bubble.io%2Ff1720810382469x139090751091792030%2FBetterTasks-Logo.png?w=256&h=34&auto=compress&dpr=1&fit=max" id="ijhlf9"/>
+        </div>
+        <div id="i1hx7l" class="gjs-grid-column"><a id="ij7g8t" title=""
+            href="https://www.linkedin.com/in/malan-bandara/" target="_blank" class="gjs-link">Founder</a><a id="ikj01e"
+            href="https://linktr.ee/bettertasksai" title="" class="gjs-link">Linktree</a><a id="i2sl68"
+            href="tel:+94788982267" class="gjs-link">Contact</a></div>
+      </div>
+      <div id="it6g1v" class="gjs-text-blue">Copyright 2024 © BetterTasks</div>
+    </div>
+  </div>
 </body>
-</html>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .gjs-icon {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    vertical-align: middle;
+    fill: currentColor;
+    width: 50px;
+    height: 50px;
+  }
+
+  .gjs-grid-column {
+    flex: 1 1 0%;
+    padding: 5px 0;
+  }
+
+  .gjs-link {
+    vertical-align: top;
+    max-width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .gjs-grid-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    min-height: auto;
+    padding: 10px 0;
+  }
+
+  .gjs-heading {
+    margin: 0;
+  }
+
+  .gjs-heading {
+    margin: 0;
+    color: rgba(29, 40, 55, 1);
+  }
+
+  .gjs-grid-column {
+    flex: 1 1 0%;
+    padding: 5px 0;
+  }
+
+  .gjs-grid-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    min-height: auto;
+    padding: 10px 0;
+  }
+
+  #iqjl {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+  }
+
+  .gjs-link {
+    vertical-align: top;
+    max-width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease 0s;
+  }
+
+  #id7x {
+    flex: 0 1 auto;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #iffs {
+    flex: 0 1 auto;
+  }
+
+  #iyd2 {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    backdrop-filter: blur(13px);
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.14);
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  #i6po {
+    justify-content: center;
+    position: sticky;
+    top: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #itjq {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  #it00l {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  #icfyb {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #irtfd {
+    flex: 0 1 auto;
+  }
+
+  #i88iz {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #icyzp {
+    flex: 0 1 auto;
+  }
+
+  #irz7b {
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #iycz3 {
+    max-width: 1200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #irjua {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #itndw {
+    padding: 10px;
+    max-width: 750px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  #i3vvs {
+    color: black;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    max-width: 100%;
+    margin-top: 38px;
+    margin-right: 38px;
+    margin-bottom: 38px;
+    margin-left: 38px;
+  }
+
+  .text-main-content {
+    line-height: 30px;
+    font-size: 1.2rem;
+  }
+
+  #iau9 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(180deg, rgba(59, 130, 245, 0.11), white 14%);
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    color: #475569;
+  }
+
+  #ij2gh {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  #igrx8 {
+    padding: 10px;
+    max-width: 750px;
+    margin-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #i466d {
+    color: black;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    max-width: 100%;
+  }
+
+  #imymf {
+    max-width: 1200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #feature-section {
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #ib541 {
+    gap: 100px;
+    justify-content: space-between;
+  }
+
+  #iz8m8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #in9ef {
+    font-size: 1.5rem;
+  }
+
+  #i8isa {
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #i8w4i {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ioyxg {
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #iiacm {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    max-width: 750px;
+  }
+
+  #ixzh1 {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  .gjs-grid-column.feature-item {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 30%;
+  }
+
+  #ia21sa {
+    padding: 10px;
+    max-width: 750px;
+    margin-bottom: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #ihap8q {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #i6fjjy {
+    padding: 10px;
+    max-width: 750px;
+    margin-bottom: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  #ia7pcr {
+    color: black;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    max-width: 100%;
+    width: 75px;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(36, 99, 235);
+    border-right-color: rgb(36, 99, 235);
+    border-bottom-color: rgb(36, 99, 235);
+    border-left-color: rgb(36, 99, 235);
+  }
+
+  #iqroa4 {
+    font-size: 1.5rem;
+  }
+
+  #i5k4nf {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  #infwen {
+    max-width: 1200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #testimonial-section {
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #inea73 {
+    justify-content: space-between;
+  }
+
+  .gjs-grid-column.testimonial-item {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 45%;
+    background-color: rgba(247, 247, 247, 0.23);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    align-items: flex-start;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.06);
+    border-right-color: rgba(0, 0, 0, 0.06);
+    border-bottom-color: rgba(0, 0, 0, 0.06);
+    border-left-color: rgba(0, 0, 0, 0.06);
+  }
+
+  #idva29 {
+    flex: 0 1 auto;
+  }
+
+  #i2d7qp {
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+
+  #iaqf2c {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  #it3yug {
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #i8gt4n {
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #ixzdlj {
+    color: black;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    max-width: 100%;
+    width: 75px;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-top-color: rgb(36, 99, 235);
+    border-right-color: rgb(36, 99, 235);
+    border-bottom-color: rgb(36, 99, 235);
+    border-left-color: rgb(36, 99, 235);
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+  }
+
+  #inucqu {
+    flex: 0 1 auto;
+  }
+
+  #i04ztt {
+    font-size: 1.5rem;
+  }
+
+  #ia9ts3 {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  #ish0zj {
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+
+  #idndjn {
+    justify-content: space-between;
+  }
+
+  #ilriti {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #iv3be5 {
+    justify-content: center;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+  }
+
+  #im0rle {
+    flex-direction: column;
+  }
+
+  #iotp6j {
+    align-self: center;
+  }
+
+  #it6g1v {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    opacity: 75%;
+  }
+
+  #ij7g8t {
+    display: block;
+  }
+
+  #ikj01e {
+    display: block;
+  }
+
+  #i1hx7l {
+    display: flex;
+    gap: 30px;
+    flex: 0 1 auto;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #i2sl68 {
+    display: block;
+  }
+
+  .gjs-button {
+    vertical-align: top;
+    max-width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    background-color: rgb(36, 99, 235);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .gjs-text-blue {
+    color: rgb(36, 99, 235);
+  }
+
+  #ism014 {
+    font-size: 2.5rem;
+  }
+
+  #in201n {
+    padding: 10px;
+    max-width: 750px;
+    margin-bottom: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  #ik2rdi {
+    max-width: 1200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.06);
+    border-right-color: rgba(0, 0, 0, 0.06);
+    border-bottom-color: rgba(0, 0, 0, 0.06);
+    border-left-color: rgba(0, 0, 0, 0.06);
+    background-image: radial-gradient(515px at 50% 141%, rgba(35, 98, 235, 0.22) 10%, white 90%);
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.07);
+  }
+
+  #iz29ek {
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gjs-link:hover {
+    color: rgb(36, 99, 235);
+    text-decoration: underline;
+  }
+
+  .gjs-icon {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    vertical-align: middle;
+    fill: currentColor;
+    width: 50px;
+    height: 50px;
+  }
+
+  #ihs4lb {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .gjs-icon.gjs-feature-icon {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: rgb(36, 99, 235);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  #ieu6p6 {
+    font-size: 1.5rem;
+  }
+
+  #izqkf7 {
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #ica43q {
+    font-size: 1.5rem;
+  }
+
+  #ickn3f {
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #i83vu9 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  #infmy1 {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #i7ltc4 {
+    color: black;
+    width: 200px;
+  }
+
+  #ijhlf9 {
+    color: black;
+    width: 200px;
+  }
+
+  #iywruw {
+    color: black;
+    width: 224px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 45px;
+  }
+
+  @media (max-width: 992px) {
+    .gjs-grid-row {
+      flex-direction: column;
+    }
+
+    .gjs-grid-row {
+      flex-direction: column;
+    }
+
+    #i2d7qp {
+      flex-direction: row;
+    }
+
+    #ish0zj {
+      flex-direction: row;
+    }
+
+    #iyd2 {
+      flex-direction: row;
+    }
+
+    #it00l {
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #iffs {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #i7ltc4 {
+      width: 170px;
+    }
+
+    #ijhlf9 {
+      width: 170px;
+    }
+  }
+</style>
